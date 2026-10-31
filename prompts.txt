@@ -1,0 +1,81 @@
+BSERC WEEK 1 PROJECT 2 — PROMPTS AND REFINEMENT LOG
+Student: Saniya Mirza
+Field: BTech CSE (AI/ML)
+
+The five build prompts below use the assignment's required structure: WHO, WHAT, DO, RULES. Refinement prompts follow in the order they shaped the pages.
+
+BUILD PROMPT 1 — CSE PANIC ROOM (REVISION / TEACHING DASHBOARD)
+WHO
+I am a BTech CSE AI/ML student who wants a motivating way to organize revision and practice viva questions.
+WHAT
+Create a playful but polished study rescue board called CSE Panic Room.
+DO
+Let me choose a subject, check off and add revision missions, track progress, run and reset a focus sprint, flip through concept cards, answer a scored viva quiz, and request a pep talk. Keep progress separated by subject.
+RULES
+Use one self-contained HTML file. Work offline with no APIs or external libraries. Store study progress only in local browser storage. Keep humor warm, controls clear, the layout phone-friendly, and include a Light/Dark theme switch.
+
+
+BUILD PROMPT 2 — NEURAL NETWORK 3D MODEL (INTERACTIVE MODEL)
+WHO
+I am a BTech CSE AI/ML student who wants to explain neural-network structure and a forward pass by rotating and exploring a model.
+WHAT
+Create a rotatable 3D teaching model called Neural Network 3D Model · AIML Lab.
+DO
+Show input, hidden, and output neuron layers in a rotatable 3D view. Let users orbit and zoom, inspect a neuron, switch compact/deep/wide architectures, adjust hidden-neuron count, choose XOR/linear/spiral input patterns, change signal speed, show or hide connections and labels, run a forward pass, train one illustrative step, reset, and randomize the view. Display an illustrative output distribution and step status.
+RULES
+State that the geometry, output distribution, and training step are illustrative, not real model training or a benchmark. Use one responsive, offline HTML file with embedded CSS and JavaScript, clear controls, and Light/Dark themes.
+BUILD PROMPT 3 — AGENT AUTONOMY ARENA (DECISION HELPER / AI TOPIC)
+WHO
+I am a CSE AI/ML student exploring AI-agent systems and how task scope, permissions, and human review affect risk.
+WHAT
+Create an interactive decision simulator called Agent Autonomy Arena.
+DO
+Offer different missions and four fictional agent profiles. Let the user change safety, speed, and privacy priorities; rank profiles live; inspect permissions and guardrails; show a visual safety/speed/privacy fingerprint; save, sort, clear, and reset comparisons.
+RULES
+Label scores as classroom simulations, not benchmarks or actual agent runs. Never connect to services or take actions such as sending messages, accessing private data, or handling money. Use one offline HTML file with Light and Dark themes.
+
+BUILD PROMPT 4 — PROMPT INJECTION ESCAPE ROOM (ORIGINAL AI-SAFETY IDEA)
+WHO
+I am a CSE AI/ML student learning to distinguish a trusted task from malicious instructions embedded in untrusted content.
+WHAT
+Create a fictional, interactive AI-safety escape room.
+DO
+Provide three scenarios, a guardrail toggle, three response choices per room, feedback, points, a safe-answer streak, solved-room progress, a hint with a score trade-off, a safety checklist, next-room progression, and restart.
+RULES
+Keep adversarial text inert and fictional. Do not execute commands, disclose real secrets, or transmit data. Explain that quoted content is not automatically a trusted instruction. Use a standalone responsive page with Light and Dark themes.
+
+BUILD PROMPT 5 — GPU DETECTIVE (ORIGINAL ML-SYSTEMS IDEA)
+WHO
+I am a CSE AI/ML student curious about memory pressure and throughput during model training.
+WHAT
+Create an offline ML-systems teaching simulator called GPU Detective.
+DO
+Let the user adjust model size, batch size, sequence length, numeric precision, and available GPU memory. Show an estimated memory load, live VRAM block map for weights/activations/runtime, relative-speed index, diagnosis, suggested fixes, presets, saved cases, sort, clear, and reset.
+RULES
+Label every number as an illustrative estimate, not a hardware benchmark. Do not access a GPU or run training. Use one standalone HTML file with Light and Dark themes.
+
+REFINEMENT PROMPT 1 — MAKE THE PAGES FEEL INTERACTIVE
+Make the pages behave like tools: controls must change a live ranking, estimate, score, timer, or scenario. Add visible status and useful experiments. Keep each page in one standalone HTML file.
+
+REFINEMENT PROMPT 2 — GIVE ALL FIVE PAGES DISTINCT IDENTITIES
+Use more space and stronger visual hierarchy. Make each page distinct, creative, playful where it fits, professional rather than childish, and uncluttered on laptop and phone screens. Add a user-controlled Light/Dark theme to every page.
+
+REFINEMENT PROMPT 3 — TEST AND PACKAGE
+Exercise the controls in each page, check both themes and a narrow phone layout, fix visible contrast or overflow issues, then package the five HTML pages and prompts file in one ZIP under 10 MB.
+
+LOW / MEDIUM / HIGH EFFORT COMPARISON
+
+Method: The unchanged BUILD PROMPT 3 above was submitted in three fresh Codex tasks. The model stayed at the default setting; only reasoning effort changed. I compared the resulting HTML artifacts. The first Medium artifact save was a test stub, so I excluded it and used a successful fresh Medium rerun.
+
+LOW
+The output used five missions (public research, inbox triage, software release, itinerary planning, and a mock incident) and four profiles: Sentinel, Sprinter, Vault, and Scout. It separated the live ranking from a selected-profile detail panel, with a four-axis fingerprint that included scope fit. Saved comparisons could be sorted by time, score, or mission. Observed generation time: about 1 minute 11 seconds.
+
+MEDIUM
+The successful rerun used four scenarios (research, code review, support reply, and schedule planning) and four profiles: Sentinel, Swift, Veil, and Co-Pilot. It emphasized profile cards, priority-based scores, fingerprint views, expandable permission details, and a saved-comparison area with sorting controls. Observed generation time: about 1 minute 24 seconds.
+
+HIGH
+The output used four scenarios (research, team scheduling, support replies, and local project-file organization) and four profiles: Scout, Tempo, Harbor, and Pilot. It gave each profile a more detailed permission/guardrail explanation and a three-trait fingerprint, plus ranking, comparison-shelf, and theme controls. The saved artifact was the largest at about 22 KB and explicitly removed external font references. Observed generation time: about 2 minutes 14 seconds.
+
+WHAT CHANGED
+All three produced the requested core interactions and kept the simulator offline with fictional, classroom-only scores and Light/Dark themes. The main changes were the mission/profile choices, layout of the rankings and profile details, fingerprint dimensions, and the amount of guardrail explanation. In these runs, High took longer and produced the most detailed profile presentation; it did not change the overall feature set dramatically. Timing and output differences are observations from these runs, not guarantees about effort levels.
+

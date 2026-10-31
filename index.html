@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Five interactive CSE, AI/ML, AI safety, and ML systems demos created for BSERC Week 1 Project 2.">
+  <title>BSERC Project 2 | Interactive HTML Demos</title>
+  <style>
+    :root{color-scheme:light;--bg:#f4f6fb;--card:#fff;--ink:#16233b;--muted:#53627a;--accent:#3157d5;--line:#dce2ed}
+    @media(prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#101522;--card:#1a2233;--ink:#edf2ff;--muted:#b2bfd5;--accent:#9ab1ff;--line:#34415a}}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+    main{max-width:1040px;margin:auto;padding:clamp(24px,6vw,72px) 20px}.eyebrow{color:var(--accent);font-size:.8rem;font-weight:750;letter-spacing:.12em;text-transform:uppercase}
+    h1{font-size:clamp(2.1rem,6vw,4rem);line-height:1.08;max-width:780px;margin:.4em 0}.intro{max-width:720px;color:var(--muted);font-size:1.1rem}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin:36px 0}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;min-height:210px;box-shadow:0 8px 24px #1825440b}
+    .num{color:var(--accent);font-size:.78rem;font-weight:750;letter-spacing:.08em}.card h2{font-size:1.25rem;margin:.65em 0 .35em}.card p{color:var(--muted);margin:0 0 20px}.card a{color:var(--accent);font-weight:700;text-decoration:none;margin-top:auto}.card a:hover{text-decoration:underline}
+    footer{border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:.9rem}
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">BSERC · Week 1 · Project 2</p>
+    <h1>Five small tools for exploring CSE and AI/ML</h1>
+    <p class="intro">A collection of standalone, browser-based demos covering study practice, neural networks, agent guardrails, prompt injection, and GPU memory. Open a demo to explore it.</p>
+    <section class="grid" aria-label="Project demos">
+      <article class="card"><span class="num">01 · STUDY SUPPORT</span><h2>CSE Panic Room</h2><p>Plan revision, run a focus sprint, review concept cards, and practice viva questions.</p><a href="cse-panic-room.html">Open demo →</a></article>
+      <article class="card"><span class="num">02 · AI/ML CONCEPTS</span><h2>Neural Network 3D Model</h2><p>Explore a network's layers, architecture options, inputs, and illustrative forward pass.</p><a href="neural-network-3d-model.html">Open demo →</a></article>
+      <article class="card"><span class="num">03 · AGENT SYSTEMS</span><h2>Agent Autonomy Arena</h2><p>Compare fictional agent profiles as missions and safety, speed, and privacy priorities change.</p><a href="agent-autonomy-arena.html">Open demo →</a></article>
+      <article class="card"><span class="num">04 · AI SAFETY</span><h2>Prompt Injection Escape Room</h2><p>Work through fictional scenarios and practice treating embedded instructions as untrusted content.</p><a href="prompt-injection-escape-room.html">Open demo →</a></article>
+      <article class="card"><span class="num">05 · ML SYSTEMS</span><h2>GPU Detective</h2><p>Explore illustrative training-memory estimates and configuration trade-offs.</p><a href="gpu-detective.html">Open demo →</a></article>
+    </section>
+    <footer>Classroom simulations only: scores, outputs, and hardware estimates are illustrative. The demos run locally in your browser and do not connect to services.</footer>
+  </main>
+</body>
+</html>
